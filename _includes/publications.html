@@ -18,13 +18,31 @@
 
   {% for publication in publications.papers %}
   <div class="item">
-    {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
+    <script>
+      function showAbstract{{ publication.id }}() {
+      var x = document.getElementById("{{ publication.id }}");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    {% if publication.abstract %}
+    <a class="publication-title" style="color: #000033" onclick="showAbstract{{ publication.id }}()"><li>{{ publication.title }}</li></a>
+    <div class="abstract" id="{{ publication.id }}" hidden>
+      {{ publication.abstract }}
+    </div>   
     {% else %}
       <li>{{ publication.title }}</li>
     {% endif %}
+
     <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
+    <div class="publication-links"><a href="https://arxiv.org/abs/{{ publication.arxiv }}" target="_defualt">arXiv</a> | <a href="{{ publication.conference_link }}" target="_defualt">{{ publication.conference }}</a> | <a href="https://doi.org/{{ publication.journal_doi }}" target="_defualt">{{ publication.journal }}</a></div>
+    {% if publication.other %}
+      <div class="publication-other" style="color: #ff4d01">{{ publication.other }}</div>
+    {% endif %}
   </div><!--//item-->
   {% endfor %}
 

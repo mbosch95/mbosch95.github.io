@@ -13,7 +13,10 @@ sidebar:
   avatar: #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: mbosch95@gmail.com
+  institution: IDSIA, USI-SUPSI
+  instSite: https://www.idsia.ch/
+  email: miguel.boschcalvo@idsia.ch
+  email_text: name.surname1surname2 at idsia.ch
   phone:
   timezone: # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
@@ -33,6 +36,8 @@ sidebar:
   leetcode: # Please provide your LeetCode username.
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
   scholar: 8YltwNoAAAAJ&hl=en
+  dblp: https://dblp.uni-trier.de/pid/302/2837.html
+  cv: True
 
   languages:
     title: Languages
@@ -64,7 +69,7 @@ sidebar:
 career-profile:
   title: About Me
   summary: |
-    Currently I am a PhD student at <a href="https://www.idsia.ch/" target="_defualt">IDSIA, Switzerland</a>, under the supervision of <a href="https://people.idsia.ch/~grandoni/" target="_defualt">Prof. Fabrizio Grandoni</a>. My research interests are, broadly, graph theory and combinatorial optimisation. I am also interested in data science. 
+    Currently I am a PhD student at <a href="https://www.idsia.ch/" target="_defualt">IDSIA, Switzerland</a>, under the supervision of <a href="https://people.idsia.ch/~grandoni/" target="_defualt">Prof. Fabrizio Grandoni</a>. My research focuses broadly on graph theory and combinatorial optimisation. During my PhD, I have been working on the theoretical design of approximation algorithms for survivable network design. Additionally, I have a strong interest in data science.
 education:
   title: Education
   info:
@@ -90,9 +95,9 @@ experiences:
   info:
   - role: Backend Developer (Internship)
     time: 2019 - 2019
-    company: Startup Hubs, San Francisco
+    company: Rudo, Valencia
     details: |
-      Rudo is a tech company specializing in consulting and developing mobile apps. I worked them as an intern developing backends with Django Rest Framework for Python.
+      Rudo is a tech company specializing in consulting and developing mobile apps. I worked there as an intern developing backends with Django Rest Framework for Python.
 
 certifications:
   title: Certifications
@@ -181,10 +186,34 @@ publications:
   title: Publications
   intro:
   papers:
-  - title: An O(log log n)-Approximation for Submodular Facility Location
-    link: "#"
-    authors: Donald E. Knuth
+  - id: 1
+    title: An O(log log n)-Approximation for Submodular Facility Location
+    authors: Fateme Abbasi, Marek Adamczyk, Miguel Bosch-Calvo, Jarosław Byrka, Fabrizio Grandoni, Krzysztof Sornat, and Antoine Tinguely
     conference: ICALP 2024
+    conference_link: https://doi.org/10.4230/LIPIcs.ICALP.2024
+    journal: 
+    journal_doi:
+    abstract: In the Submodular Facility Location problem (SFL) we are given a collection of n clients and m facilities in a metric space. A feasible solution consists of an assignment of each client to some facility. For each client, one has to pay the distance to the associated facility. Furthermore, for each facility f to which we assign the subset of clients S_f, one has to pay the opening cost g(S_f), where g(⋅) is a monotone submodular function with g(\emptyset)=0. SFL is APX-hard since it includes the classical (metric uncapacitated) Facility Location problem (with uniform facility costs) as a special case. Svitkina and Tardos [SODA'06] gave the current-best O(log n) approximation algorithm for SFL. The same authors pose the open problem whether SFL admits a constant approximation and provide such an approximation for a very restricted special case of the problem. We make some progress towards the solution of the above open problem by presenting an O(loglog n) approximation. Our approach is rather flexible and can be easily extended to generalizations and variants of SFL. In more detail, we achieve the same approximation factor for the practically relevant generalizations of SFL where the opening cost of each facility f is of the form p_f+g(S_f) or w_fg(S_f), where pf,wf\geq 0 are input values. We also obtain an improved approximation algorithm for the related Universal Stochastic Facility Location problem. In this problem one is given a classical (metric) facility location instance and has to a priori assign each client to some facility. Then a subset of active clients is sampled from some given distribution, and one has to pay (a posteriori) only the connection and opening costs induced by the active clients. The expected opening cost of each facility f can be modelled with a submodular function of the set of clients assigned to f.
+    arxiv: 2211.05474
+  - id: 2
+    title: A 4/3 Approximation for 2-Vertex-Connectivity
+    authors: Miguel Bosch-Calvo, Fabrizio Grandoni, and Afrouz Jabal Ameli
+    conference: ICALP 2023
+    conference_link: https://doi.org/10.4230/LIPIcs.ICALP.2023
+    journal: 
+    journal_doi:
+    abstract: The 2-Vertex-Connected Spanning Subgraph problem (2VCSS) is among the most basic NP-hard (Survivable) Network Design problems. We are given an (unweighted) undirected graph G. Our goal is to find a subgraph S of G with the minimum number of edges which is 2-vertex-connected, namely S remains connected after the deletion of an arbitrary node. 2VCSS is well-studied in terms of approximation algorithms, and the current best (polynomial-time) approximation factor is 10/7 by Heeger and Vygen [SIDMA'17] (improving on earlier results by Khuller and Vishkin [STOC'92] and Garg, Vempala and Singla [SODA'93]).
+    arxiv: 2305.02240
+    other: Best paper award
+  - id: 3
+    title: An improved kernel for the flip distance problem on simple convex polygons
+    authors: Miguel Bosch-Calvo, Steven Kelk
+    conference: CCCG 2021
+    conference_link: https://projects.cs.dal.ca/cccg2021/wordpress/wp-content/uploads/2021/08/CCCG2021.pdf
+    journal: Information Processing Letters
+    journal_doi: 10.1016/j.ipl.2023.106381
+    abstract: The complexity of computing the flip distance between two triangulations of a simple convex polygon is unknown. Here we approach the problem from a parameterized complexity perspective and improve upon the 2k kernel of Lucas [12]. Specifically, we describe a kernel of size  and then show how it can be improved to  for every constant. By ensuring that the kernel consists of a single instance our result yields a kernel of the same magnitude (up to additive terms) for the almost equivalent rotation distance problem on rooted, ordered binary trees. The earlier work of Lucas left the kernel as a disjoint set of instances, potentially allowing very minor differences in the definition of the size of instances to accumulate, causing a constant-factor distortion in the kernel size when switching between flip distance and rotation distance formulations. Our approach avoids this sensitivity. We have also undertaken experiments to understand how much reduction is achieved by our kernel in practice.
+    arxiv:
 
 recommendations:
   title: Recommendations
