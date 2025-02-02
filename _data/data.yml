@@ -4,27 +4,27 @@
 
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: False # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Miguel Bosch Calvo
+  tagline: 
+  avatar: #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  email: mbosch95@gmail.com
+  phone:
+  timezone: # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
+  website: # Include the full website URL, including "http://" or "https://".
+  linkedin: miguel-bosch-calvo-982571200
+  xing:
+  github:
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
-  twitter: '@jekyllrb'
+  twitter:
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
@@ -32,109 +32,67 @@ sidebar:
   hackerrank: # Please provide your HackerRank username.
   leetcode: # Please provide your LeetCode username.
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  scholar: 8YltwNoAAAAJ&hl=en
 
   languages:
     title: Languages
     info:
     - idiom: English
-      level: Native
-
-    - idiom: French
-      level: Professional
+      level: C1 Level
 
     - idiom: Spanish
-      level: Professional
+      level: Native
+
+    - idiom: Catalan
+      level: C1 Level
 
   interests:
     title: Interests
     info:
-    - item: Climbing
+    - item: Combinatorial Optimisation
       link:
 
 
-    - item: Snowboarding
+    - item: Graph Theory
       link:
 
 
-    - item: Cooking
+    - item: Data Science
       link:
 
 
 career-profile:
-  title: Career Profile
+  title: About Me
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Currently I am a PhD student at <a href="https://www.idsia.ch/" target="_defualt">IDSIA, Switzerland</a>, under the supervision of <a href="https://people.idsia.ch/~grandoni/" target="_defualt">Prof. Fabrizio Grandoni</a>. My research interests are, broadly, graph theory and combinatorial optimisation. I am also interested in data science. 
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  - degree: PhD in Theoretical Computer Science
+    university: Università della Svizzera Italiana
+    time: 2022 - Now
+    details:
+  - degree: MSc in Data Science for Decision Making
+    university: Maastricht University
+    time: 2020 - 2022
+    details: Cum Laude
+  - degree: MSc in Industrial Engineering
+    university: Polytechnic University of Valencia
+    time: 2017 - 2019
+    details:
+  - degree: BSc in Industrial Engineering
+    university: Polytechnic University of Valencia
+    time: 2013 - 2017
+    details:
 
 experiences:
-  title: Experiences
+  title: Experience
   info:
-  - role: Lead Developer
-    time: 2015 - Present
+  - role: Backend Developer (Internship)
+    time: 2019 - 2019
     company: Startup Hubs, San Francisco
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      Rudo is a tech company specializing in consulting and developing mobile apps. I worked them as an intern developing backends with Django Rest Framework for Python.
 
 certifications:
   title: Certifications
@@ -221,25 +179,12 @@ oss:
 
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+  intro:
   papers:
-  - title: The Art of Computer Programming
+  - title: An O(log log n)-Approximation for Submodular Facility Location
     link: "#"
     authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
+    conference: ICALP 2024
 
 recommendations:
   title: Recommendations
