@@ -1,0 +1,56 @@
+{% assign manuscripts = site.data.data.manuscripts %}
+{% if manuscripts %}
+<section class="section manuscripts-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ manuscripts.title }}
+  </h2>
+
+  {% if manuscripts.intro %}
+  <div class="intro">
+    {{ manuscripts.intro | markdownify }}
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for manuscript in manuscripts.papers %}
+  <div class="item">
+    <script>
+      function showAbstract{{ manuscript.id }}() {
+      var x = document.getElementById("{{ manuscript.id }}");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    {% if manuscript.abstract %}
+    <a class="manuscript-title" style="color: #000033" onclick="showAbstract{{ manuscript.id }}()"><li>{{ manuscript.title }}</li></a>
+    <div class="abstract" id="{{ manuscript.id }}" hidden>
+      {{ manuscript.abstract }}
+    </div>   
+    {% else %}
+      <li>{{ manuscript.title }}</li>
+    {% endif %}
+
+    <div class="manuscript-authors">{{ manuscript.authors }}</div>
+
+    <div class="manuscript-links">
+    {% if manuscript.arxiv %}
+      <a href="https://arxiv.org/abs/{{ manuscript.arxiv }}" target="_defualt">arXiv</a>
+    {% endif %}
+    </div> 
+
+    {% if manuscript.other %}
+      <div class="manuscript-other" style="color: #ff4d01">{{ manuscript.other }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

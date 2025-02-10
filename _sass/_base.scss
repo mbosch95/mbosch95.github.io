@@ -59,7 +59,7 @@ p {
     color: #fff;
   }
   .name {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
@@ -77,11 +77,11 @@ p {
 
   .avatar {
     //used for profile image
-    max-width: 100px;
+    max-width: 150px;
     margin-bottom: 15px;
     border: 0px solid #fff;
     border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(9, 8, 8, 0.1);
   }
   .contact-list {
     .fas,
@@ -157,6 +157,13 @@ p {
       }
     }
   }
+  .last-updated {
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+  }  
 }
 
 .main-wrapper {
@@ -262,6 +269,34 @@ p {
       margin-bottom: 15px;
     }
   }
+// style="text-align: justify"
+
+  .abstract {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .manuscript-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color;
+    margin-bottom: 1px;
+  }
+  .manuscript-authors {
+    font-style: italic;
+    color: $text-grey;
+    margin-bottom: 1px;
+  }
+  .manuscripts-section {
+    .intro {
+      margin-bottom: 30px;
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+  }
+
 }
 
 .skillset {
@@ -296,3 +331,4 @@ p {
     color: $heart;
   }
 }
+

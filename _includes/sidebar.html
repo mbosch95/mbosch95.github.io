@@ -8,7 +8,7 @@
     {% endif %}
 
     {% if sidebar.name %}
-    <font size="5">{{ sidebar.name }}</font>
+    <div class="name">{{ sidebar.name }}</div>
     {% endif %}
 
     {% if sidebar.tagline %}
@@ -30,4 +30,7 @@
     {% include about.html %}
   {% endif %}
 
+  <div class="last-updated">
+    <ul>Last updated: 10/02/2025</ul>
+  </div>
 </div><!--//sidebar-wrapper-->
