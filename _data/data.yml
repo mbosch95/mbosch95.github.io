@@ -57,15 +57,19 @@ sidebar:
     - item: Combinatorial Optimisation
       link:
 
-
     - item: Graph Theory
       link:
 
     - item: Approximation Algorithms
       link:
 
+    - item: Operations Research
+      link:
+
     - item: Data Science
       link:
+  
+  last-updated: 18/02/2025
 
 
 career-profile:
