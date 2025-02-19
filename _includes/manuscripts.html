@@ -44,11 +44,10 @@
     {% if manuscript.arxiv %}
       <a href="https://arxiv.org/abs/{{ manuscript.arxiv }}" target="_defualt">arXiv</a>
     {% endif %}
-    </div> 
-
     {% if manuscript.other %}
-      <div class="manuscript-other" style="color: #ff4d01">{{ manuscript.other }}</div>
+      | <a href="https://acm-stoc.org/stoc2025/accepted-papers.html" target="_defualt">{{ manuscript.other }}</a>
     {% endif %}
+    </div> 
   </div>
   {% endfor %}
 
